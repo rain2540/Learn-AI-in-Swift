@@ -19,7 +19,6 @@ extension Int {
 for i in 1 ..< 10 {
     for j in 1 ... i {
         var result = i * j
-        print("\(i) * \(j) = " + result.format("-2"), terminator: "  ")
+        print("\(i) * \(j) = " + result.format("-2"), terminator: j == i ? "\n" : "  ")
     }
-    print("\n")
 }
