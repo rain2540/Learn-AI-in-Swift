@@ -35,6 +35,6 @@ if year % 400 == 0 || (year % 4 == 0 && year % 100 != 0) {  /*判断是不是闰
     leap = 0
 }
 if leap == 1 && month > 2 { /*如果是闰年且月份大于2,总天数应该加一天*/
-    sum++
+    sum += 1
 }
 print("It is the \(sum)th day.")
