@@ -8,10 +8,12 @@
 
 import UIKit
 
+//  递归
 func fibonacci(index: Int) -> Int {
     return (index > 2) ? fibonacci(index - 1) + fibonacci(index - 2) : 1
 }
 
+//  循环
 func fibonacciLoop(index: Int) -> Int {
     var a = [1, 1, 0]
     if index == 1 || index == 2 {
