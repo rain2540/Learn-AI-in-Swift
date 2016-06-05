@@ -22,3 +22,7 @@ for i in 1 ..< 10 {
         print("\(i) * \(j) = " + result.format("-2"), terminator: j == i ? "\n" : "  ")
     }
 }
+
+//  附: ASCII 码与字符转换
+let a = Character(UnicodeScalar(65))
+let a_ASCII = UnicodeScalar("A")
