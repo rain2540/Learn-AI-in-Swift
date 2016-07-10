@@ -11,7 +11,7 @@ import Foundation
 //  extension to Int
 extension Int {
     /// 格式化输出
-    public func format(f: String) -> String {
+    public func format(_ f: String) -> String {
         return String(format: "%\(f)d", self)
     }
 }
