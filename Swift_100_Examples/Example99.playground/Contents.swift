@@ -9,7 +9,7 @@
 import UIKit
 
 //  循环
-func gcd(a a: Int, b: Int) -> Int {
+func gcd(a: Int, b: Int) -> Int {
     var x = a, y = b
     var n = x % y
     while n != 0 {
@@ -24,7 +24,7 @@ gcd(a: 75, b: 100)
 
 
 //  递归
-func gcdRecursive(a a: Int, b: Int) -> Int {
+func gcdRecursive(a: Int, b: Int) -> Int {
     return b == 0 ? a : gcdRecursive(a: b, b: a % b)
 }
 
