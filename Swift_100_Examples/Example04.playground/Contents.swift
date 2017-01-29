@@ -99,3 +99,18 @@ if y > z {
 }
 
 print("small to big: \(x) \(y) \(z)")
+
+//  使用元组
+if x > y {
+    (x, y) = (y, x)
+}
+
+if x > z {
+    (x, z) = (z, x)
+}
+
+if y > z {
+    (y, z) = (z , y)
+}
+
+print("small to big: \(x) \(y) \(z)")
