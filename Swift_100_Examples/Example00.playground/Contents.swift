@@ -8,6 +8,7 @@
 
 import Foundation
 
+print("for loop: ")
 for i in 1 ..< 5 {
     for j in 1 ..< 5 {
         for k in 1 ..< 5 {
@@ -16,4 +17,18 @@ for i in 1 ..< 5 {
             }
         }
     }
+}
+
+print("")
+
+print("function forEach: ")
+let nums = [1, 2, 3, 4]
+nums.forEach { (i) in
+    nums.forEach({ (j) in
+        nums.forEach({ (k) in
+            if (i != j) && (i != k) && (j != k) {   //  确保i, j, k互不相同
+                print("\(i)\(j)\(k)")
+            }
+        })
+    })
 }
