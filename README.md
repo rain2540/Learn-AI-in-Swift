@@ -1,2 +1,2 @@
-# Learn AI in Swift
+# Mathematics with Swift
 
