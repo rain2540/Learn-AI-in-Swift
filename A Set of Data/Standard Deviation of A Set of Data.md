@@ -1,3 +1,3 @@
-# 一组数据的标准差 (Standard Deviation of A Set of Data)
+# 简单的数据分析
 
 
