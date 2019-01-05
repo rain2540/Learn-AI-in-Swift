@@ -17,6 +17,7 @@ func average(of nums: [Double]) -> Double {
 
 
 // 极差
+//: 极差 = (一组数据中的) 最大值 - 最小值
 func range(of nums: [Double]) -> Double {
     guard let max = nums.max(), let min = nums.min() else { return 0.0 }
     return max - min
