@@ -44,6 +44,7 @@ func standardDeviation(of nums: [Double]) -> Double {
 
 
 // 样本方差
+//: 每个样本值与全体样本值的平均数之差的平方值的平均数。
 func sampleVariance(of nums: [Double]) -> Double {
     let numAverage = average(of: nums)
     var sum = 0.0
