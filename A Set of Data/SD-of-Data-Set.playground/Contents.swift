@@ -25,6 +25,7 @@ func range(of nums: [Double]) -> Double {
 
 
 // 方差
+//: 每个数据的值与全体数据的值的平均数之差的平方值的平均数。
 func variance(of nums: [Double]) -> Double {
     let numAverage = average(of: nums)
     var sum = 0.0
