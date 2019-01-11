@@ -39,6 +39,7 @@ func variance(of nums: [Double]) -> Double {
 
 
 // 标准差
+//: 方差的平方根
 func standardDeviation(of nums: [Double]) -> Double {
     return sqrt(variance(of: nums))
 }
