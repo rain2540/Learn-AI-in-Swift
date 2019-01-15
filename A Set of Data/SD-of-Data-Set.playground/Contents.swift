@@ -9,6 +9,10 @@ func sum(of nums: [Double]) -> Double {
     return sum
 }
 
+func sum(of input: Double...) -> Double {
+    return input.reduce(0.0, +)
+}
+
 
 // 平均值
 func average(of nums: [Double]) -> Double {
