@@ -68,10 +68,13 @@ func sampleStandardDeviation(of nums: [Double]) -> Double {
     return sqrt(sampleVariance(of: nums))
 }
 
+// 标准分
+func standardScores(of scores: [Double]) -> [Double] {
+    return scores.map{ ($0 - average(of: scores)) / standardDeviation(of: scores) }
+}
 
 
-
-let a: [Double] = [1, 2, 3, 4, 5]
+let a: [Double] = [70, 90, 60, 60]//[1, 2, 3, 4, 5]
 print("sum: ", sum(of: a))
 print("average: ", average(of: a))
 print("range: ", range(of: a))
