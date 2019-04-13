@@ -71,6 +71,10 @@ func standardScores(of scores: [Double]) -> [Double] {
     return scores.map{ ($0 - average(of: scores)) / standardDeviation(of: scores) }
 }
 
+func standardScore(of score: Double, by average: Double, _ standardDeviation: Double) -> Double {
+    return (score - average) / standardDeviation
+}
+
 
 let a: [Double] = [70, 90, 60, 60]//[1, 2, 3, 4, 5]
 print("sum: ", sum(of: a))
