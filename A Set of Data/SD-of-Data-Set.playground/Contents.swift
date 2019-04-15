@@ -2,9 +2,7 @@ import Foundation
 
 // 和
 func sum(of nums: [Double]) -> Double {
-    return nums.reduce(0, { x, y in
-        x + y
-    })
+    return nums.reduce(0, { $0 + $1 })
 }
 
 func sum(of input: Double...) -> Double {
