@@ -64,7 +64,7 @@ func sampleStandardDeviation(of nums: [Double]) -> Double {
     return sqrt(sampleVariance(of: nums))
 }
 
-// 标准分
+// 一组数据中，每个数据的标准分
 func standardScores(of scores: [Double]) -> [Double] {
     return scores.map{ ($0 - average(of: scores)) / standardDeviation(of: scores) }
 }
