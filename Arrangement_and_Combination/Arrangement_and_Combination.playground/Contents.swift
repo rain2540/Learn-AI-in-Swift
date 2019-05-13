@@ -10,3 +10,12 @@ func factorial(of num: Int) throws -> Int {
     }
     return num > 0 ? (1 ... num).reduce(1, { $0 * $1 }) : 1
 }
+
+let num = 3
+
+do {
+    let res = try factorial(of: num)
+    print("factorial of \(num) is", res)
+} catch {
+    print(error)
+}
