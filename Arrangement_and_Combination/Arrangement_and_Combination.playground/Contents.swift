@@ -1,8 +1,16 @@
 import UIKit
 
+/// 阶乘、排列组合错误类型
+///
+/// - factorialOfNegativeNumbers: 负数的阶乘
+/// - arrangementParameterNonCompliance: 排列参数不符合规范
+/// - combinationParameterNonCompliance: 组合参数不符合规范
 enum ACError: Error {
+    /// 负数的阶乘
     case factorialOfNegativeNumbers
+    /// 排列参数不符合规范
     case arrangementParameterNonCompliance
+    /// 组合参数不符合规范
     case combinationParameterNonCompliance
 }
 
