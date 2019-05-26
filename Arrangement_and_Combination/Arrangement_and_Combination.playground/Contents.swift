@@ -2,7 +2,7 @@ import UIKit
 
 enum ACError: Error {
     case factorialOfNegativeNumbers
-    case ArrangementParameterNonCompliance
+    case arrangementParameterNonCompliance
 }
 
 func factorial(of num: Int) throws -> Int {
@@ -19,4 +19,12 @@ do {
     print("factorial of \(num) is", res)
 } catch {
     print(error)
+}
+
+
+func arrangement(n: Int, m: Int) throws -> Int {
+    guard m <= n else {
+        throw ACError.arrangementParameterNonCompliance
+    }
+    return try factorial(of: n) / factorial(of: n - m)
 }
