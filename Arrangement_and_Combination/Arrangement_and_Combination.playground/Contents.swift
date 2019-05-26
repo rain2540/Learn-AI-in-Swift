@@ -3,6 +3,7 @@ import UIKit
 enum ACError: Error {
     case factorialOfNegativeNumbers
     case arrangementParameterNonCompliance
+    case combinationParameterNonCompliance
 }
 
 func factorial(of num: Int) throws -> Int {
