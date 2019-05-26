@@ -14,7 +14,11 @@ enum ACError: Error {
     case combinationParameterNonCompliance
 }
 
-
+/// 阶乘
+///
+/// - Parameter num: 需要计算阶乘的非负整数
+/// - Returns: 计算结果
+/// - Throws: 计算中的异常情况
 func factorial(of num: Int) throws -> Int {
     guard num >= 0 else {
         throw ACError.factorialOfNegativeNumbers
