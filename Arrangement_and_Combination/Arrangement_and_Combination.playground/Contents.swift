@@ -36,3 +36,11 @@ do {
 } catch {
     print(error)
 }
+
+
+func combination(n: Int, m: Int) throws -> Int {
+    guard m <= n else {
+        throw ACError.combinationParameterNonCompliance
+    }
+    return try factorial(of: n) / (factorial(of: m) * factorial(of: n - m))
+}
