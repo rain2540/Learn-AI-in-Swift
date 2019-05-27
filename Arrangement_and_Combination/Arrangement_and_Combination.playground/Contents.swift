@@ -29,6 +29,7 @@ func combination(n: Int, m: Int) throws -> Int {
 }
 
 
+//: Examples
 let n = 4, m = 2
 
 do {
