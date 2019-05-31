@@ -41,8 +41,10 @@ func combination(n: Int, m: Int) throws -> Int {
 }
 
 
+//: Examples
 let n = 4, m = 2
 
+//: Factorial
 do {
     let res = try factorial(of: n)
     print("factorial of \(n) is", res)
