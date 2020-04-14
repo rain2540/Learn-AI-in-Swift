@@ -38,6 +38,12 @@ func arrangement(n: Int, m: Int) throws -> Int {
     return try factorial(of: n) / factorial(of: n - m)
 }
 
+/// 组合
+/// - Parameters:
+///   - n: 元素总数
+///   - m: 取出元素个数
+/// - Throws: 计算中的异常情况
+/// - Returns: 组合计算结果
 func combination(n: Int, m: Int) throws -> Int {
     guard m <= n else {
         throw ACError.combinationParameterNonCompliance
