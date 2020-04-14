@@ -15,10 +15,9 @@ enum ACError: Error {
 }
 
 /// 阶乘
-///
 /// - Parameter num: 需要计算阶乘的非负整数
-/// - Returns: 计算结果
 /// - Throws: 计算中的异常情况
+/// - Returns: 阶乘计算结果
 func factorial(of num: Int) throws -> Int {
     guard num >= 0 else {
         throw ACError.factorialOfNegativeNumbers
@@ -26,6 +25,12 @@ func factorial(of num: Int) throws -> Int {
     return num > 0 ? (1 ... num).reduce(1, { $0 * $1 }) : 1
 }
 
+/// 排列
+/// - Parameters:
+///   - n: 元素总数
+///   - m: 取出元素个数
+/// - Throws: 计算中的异常情况
+/// - Returns: 排列计算结果
 func arrangement(n: Int, m: Int) throws -> Int {
     guard m <= n else {
         throw ACError.arrangementParameterNonCompliance
